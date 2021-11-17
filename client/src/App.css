@@ -12,12 +12,88 @@
 .main {
   margin-top: 10vh;
   height: 80vh;
-  width: 90vh;
-  border: 1px solid black;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
 }
 .dropArea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px 20px #0ff;
 }
 .placeholderUploadImage {
+  font-size: xx-large;
+}
+/* input[type='file'],
+input[type='file']:visited,
+input[type='file']:hover,
+input[type='file']:focus,
+input[type='file']:active {
+  margin: 0;
+  padding: 0em 0em;
+  padding: 0rem 0rem;
+  font-size: large;
+  overflow: hidden; 
+  background: #ffffff;
+  border-radius: 0.2em;
+  border-radius: 0.2rem;
+  outline: none;
+  border: 2px solid #bbb;
+  cursor: pointer;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type='file']:hover {
+  background: #f9f9ff;
+  border: 2px solid #999;
+}
+
+input[type='file']:visited,
+input[type='file']:focus,
+input[type='file']:active {
+  background: #fff; 
+  border: 2px solid #999;
+} */
+div.upload:hover {
+  opacity: 0.95;
+}
+
+div.upload input[type='file'] {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+.uploadButton {
+  background-color: #425f9c;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin-right: 15px;
+  width: auto;
+  padding: 0 20px;
+  box-sizing: content-box;
+  display: none;
+}
+
+.fileName {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.upload + .uploadButton {
+  height: 38px;
 }
